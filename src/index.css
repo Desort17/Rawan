@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-arabic: "Amiri", serif;
+}
+
+:root {
+  --color-pink-letter: #fce4ec;
+  --color-pink-accent: #f06292;
+}
+
+body {
+  background-color: #050505;
+  color: #fff;
+  overflow: hidden;
+}
+
+.arabic-text {
+  direction: rtl;
+  font-family: var(--font-arabic);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
